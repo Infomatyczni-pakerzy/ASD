@@ -1,3 +1,7 @@
+#Kazda iteracja petli zajmuje sie najwyzszymi w stosie wartosciami high(i) i low(i) i sciąga je ze stosu.
+#Kazda iteracja może maksymalnie wrzucic na stos 2 pary ( high(i) i low(i) ). 
+#Petla się konczy, gdy nie ma zadnej pary na stosie.
+
 def partition(arr, l, h): 
     i = ( l - 1 ) 
     x = arr[h] 
