@@ -1,6 +1,6 @@
 def median_of_medians(A, i):
     sublists = [A[j:j+5] for j in range(0, len(A), 5)]
-    medians = [sorted(sublist)[len(sublists)//2] for sublist in sublists]
+    medians = [sorted(sublist)[len(sublist)//2] for sublist in sublists]
 
     if len(medians) <= 5:
         pivot = sorted(medians)[len(medians)//2]
