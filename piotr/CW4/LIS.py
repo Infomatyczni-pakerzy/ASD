@@ -1,4 +1,4 @@
-# longest increasing subsequence  O(nlogn)
+# longest increasing subsequence  O(n^2)
 def print_LIS(A, P, i):
     if P[i] >= 0:
         print_LIS(A, P, P[i])
