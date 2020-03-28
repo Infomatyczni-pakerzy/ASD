@@ -20,4 +20,4 @@ def median_of_medians(A, i):
 
 
 A = [ 9, 5 ,12, 7, 346, 12, 7, 4, 1 ,6, 34, 2, 6 , 53, 234, 7, 3 ,4 ,8, 5, 3, 34,7]
-print(median_of_medians(A, (len(A) - 1)//2 )
+print(median_of_medians(A, (len(A) - 1)//2 ))
