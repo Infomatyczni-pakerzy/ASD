@@ -1,6 +1,7 @@
 # szef nie moze z podwladnym
 # wspolczynnik imprezowosci
-
+# dodatkowo wypisuje kto powinien pojsc na impreze ( obiekt "who" w Employee )
+# moglem cos zjebac
 class Employee:
     def __init__(self, fun, name):
         self.name = name
@@ -40,8 +41,8 @@ def g(v):
     return v.g
 
 szef = Employee(12, "SZEFO")
-pracownik1 = Employee(12, "Ja")
-pracownik2 = Employee(3, "Debil")
+pracownik1 = Employee(14, "Chmiest")
+pracownik2 = Employee(6, "Ja")
 sekretarka = Employee(8, "Baba")
 sprzataczka = Employee(4, "Szmula")
 
@@ -50,5 +51,5 @@ pracownik2.emp.append(sekretarka)
 szef.emp = szef.emp + [pracownik1,pracownik2]
 
 print(f(szef))
-for someone in szef.who:
+for someone in szef.who:    #wypisuje who szefa
     print (someone.name)
